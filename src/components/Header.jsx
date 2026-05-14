@@ -3,7 +3,7 @@ import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import logoSvg from '../assets/keepcodein.svg'; // Adjust the path as per your directory structure
 import { CiSearch } from "react-icons/ci";
-import { IoHomeOutline } from "react-icons/io5";
+import { IoHomeOutline, IoShieldCheckmarkOutline } from "react-icons/io5";
 import { GrServices } from "react-icons/gr";
 import { AiFillPieChart } from "react-icons/ai";
 import { LuCopyPlus } from "react-icons/lu";
@@ -51,6 +51,12 @@ export default function Header() {
                     className="rounded-md px-3 py-2 font-medium text-sm 2xl:text-lg text-gray-300 hover:text-[#6318F1] cursor-pointer hover:scale-105 duration-200 "
                   >
                     <AnchorLink offset={10} href='#services'>Services </AnchorLink>
+                  </div>
+                  <div
+
+                    className="rounded-md px-3 py-2 font-medium text-sm 2xl:text-lg text-gray-300 hover:text-[#6318F1] cursor-pointer hover:scale-105 duration-200 "
+                  >
+                    <AnchorLink offset={10} href='#why-us' className='text-nowrap'>Why Us</AnchorLink>
                   </div>
                   <div
 
@@ -146,6 +152,20 @@ export default function Header() {
                   <span >  <GrServices className='' size={25} /></span>
                   <span className='text-xl'>Services</span>
                 </div>
+
+
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
+
+                className="block rounded-md px-6 py-4 bg-gradient-to-r from-[#FC466B]/5 to-[#3F5EFB]/5 text-base font-medium text-gray-300  hover:bg-gradient-to-r hover:from-[#FC466B] hover:to-[#3F5EFB] hover:opacity-60"
+              >
+                <AnchorLink offset={10} href='#why-us'>
+                  <div className='flex gap-x-3'>
+                    <span >  <IoShieldCheckmarkOutline className='' size={25} /></span>
+                    <span className='text-xl'>Why Us</span>
+                  </div>
+                </AnchorLink>
 
 
               </Disclosure.Button>

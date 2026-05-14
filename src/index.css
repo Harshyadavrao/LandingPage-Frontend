@@ -28,6 +28,13 @@ body {
       border-image: linear-gradient(to right, #FC466B, #3F5EFB);
       border-image-slice: 1;
   }
+    .contact-form-field:focus,
+    .contact-form-field:focus-visible,
+    .contact-form-field:active {
+      outline: none !important;
+      box-shadow: none !important;
+      border-color: transparent !important;
+  }
 
   body::-webkit-scrollbar {
     width: 12px; /* Width of the scrollbar */
@@ -147,5 +154,26 @@ body::-webkit-scrollbar-thumb:hover {
   }
   .animate-zoom {
     animation: zoom 8s ease-out infinite;
+  }
+
+  @keyframes caseStudyFilter {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .case-study-card {
+    animation: caseStudyFilter 350ms ease both;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .case-study-card {
+      animation: none;
+    }
   }
 

@@ -8,25 +8,22 @@ import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import Explore from "./components/Explore";
 import HeroSec from "./components/HeroSec";
+import WhyChooseUs from "./components/WhyChooseUs";
 
 function App() {
-  
   return (
     <>
       <Header />
-
       <HeroSec />
       <MarqueeSection />
       <Services />
+      <WhyChooseUs />
       <Explore />
-      <AboutUs/>
-      <CustomTech/> 
-      <FAQs/>
-      <ContactUs/>
-    
-
-    <Footer />
-
+      <AboutUs />
+      <CustomTech />
+      <FAQs />
+      <ContactUs />
+      <Footer />
     </>
   );
 }
